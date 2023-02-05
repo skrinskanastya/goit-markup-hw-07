@@ -76,6 +76,10 @@
         color: var(--brand-color-blue);
     }
 
+    .menu-open{
+       display: none;
+    }
+
     .banner{
         background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -100,6 +104,21 @@
         max-width: 494px;
     }
 
+    .advantages > .container {
+        width: 736px;
+        
+    }
+
+    .advantages-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .advantages-item {
+        width: calc((100% - 24px) / 2);
+        
+    }
+
     .team > .container{
         width: 557px;
     }
@@ -108,8 +127,33 @@
         width: calc((100% - 30px) / 2);
     }
 
+    .team-item:not(:last-child) {
+        margin-bottom: 64px;
+    }
+
     .customers > .container{
         width: 552px;
+    }
+
+    .customers-list{
+        column-gap: 24px;
+
+    }
+
+    .footer>.container{
+        width: 535px;
+    }
+
+    .footer-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .footer-wrapper{
+        justify-content: flex-start;
+        margin-bottom: 72px;
     }
 
     .customers-item {

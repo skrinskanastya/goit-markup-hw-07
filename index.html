@@ -29,14 +29,14 @@
                 <li class="header-contacts-item"><a class="header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li class="header-contacts-item"><a class="header-tel" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
-                <button type="button" class="menu-open" js-open-menu >
+                <button type="button" class="menu-open" data-menu-open  >
                     <svg class="menu-open-icon" width="32" height="22">
                         <use href="./images/icons.svg#icon-burger"></use>
                     </svg>
                 </button>
-                <div class="mob-menu is-hidden" js-menu-container >
+                <div class="mob-menu" data-menu >
                     <div class="container">
-                        <button type="button" class="menu-close" js-close-menu>
+                        <button type="button" class="menu-close" data-menu-close >
                             <svg class="menu-close-icon" width="8" height="8">
                                 <use href="./images/icons.svg#icon-close"></use>
                             </svg>
@@ -88,7 +88,7 @@
                 <button class="banner-button" type="button" data-modal-open >Order Service</button>
             </div>
         </section> 
-         <!-- <section class="advantages section">
+          <section class="advantages section">
             <div class="container">
                 <h2 hidden>Advantages</h2>
                 <ul class="advantages-list">
@@ -123,8 +123,8 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
-        <!-- <section class="about section">
+        </section>
+         <section class="about section">
             <div class="container">
                 <h2 class="about-title">What are we doing</h2>
                 <ul class="about-list">
@@ -139,8 +139,8 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
-        <!-- <section class="team section">
+        </section>
+         <section class="team section">
             <div class="container">
                 <h2 class="team-title">Our Team</h2>
                 <ul class="team-list">
@@ -258,8 +258,8 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
-        <!-- <section class="customers section">
+        </section> 
+         <section class="customers section">
             <div class="container">
                 <h2 class="customers-title">Customers</h2>
                 <ul class="customers-list">
@@ -295,9 +295,9 @@
                     </a></li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
-    <!-- <footer class="footer">
+     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-wrapper">
                 <a class="footer-logo" href="./index.html"> <span>Web</span>Studio</a>
@@ -336,7 +336,7 @@
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="footer-form-wrapper">
                 <p class="footer-form-title">Subscribe</p>
                 <form class="footer-form">
                     <input type="text" name="user-email" class="footer-input" placeholder="E-mail" >
@@ -344,7 +344,7 @@
                 </form>
             </div>
         </div>
-    </footer> -->
+    </footer> 
     <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal-window is-hidden">
             <button type="button" class="modal-close-button" data-modal-close>
