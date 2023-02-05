@@ -1,0 +1,118 @@
+@media screen and (min-width: 768px) {
+    .container{
+        width: 768px;
+    }
+
+    .header-list {
+        list-style: none;
+        display: flex;
+        gap: 40px;
+     }
+     /* .header-item {
+     } */
+    
+    .header-link {
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        color:var(--brand-color-navy-blue);
+        text-decoration: none;
+        transition: color var(--tra);
+        position: relative;
+    }
+    
+    .header-link.current::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: var(--brand-color-ocean);
+        border-radius: 2px;
+        left: 0;
+        bottom: -27px;
+    }
+    
+    .header-link:hover{
+        color:var(--brand-color-grey);
+    }
+    
+    .header-link:active{
+        color: var(--brand-color-blue);
+    }
+    .header-contacts-list{
+        display: block;
+        margin-left: auto;
+        align-items: center;
+        list-style: none;
+        gap: 40px;
+    }
+     .header-contacts-list a{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.3;
+        letter-spacing: 0.02em;
+        color:var(--brand-color-grey);
+        text-decoration: none;
+     }
+     
+    /*
+    .header-contacts-item{}
+    */
+    .header-mail {
+    transition: color var(--tra);
+    } 
+    .header-tel {
+        transition: color var(--tra);
+    }
+    
+    
+    .header-mail:hover,
+    .header-mail:focus {
+        color: var(--brand-color-blue);
+    }
+    
+    .header-tel:hover,
+    .header-tel:focus {
+        color: var(--brand-color-blue);
+    }
+
+    .banner{
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7) ), 
+        url(../images/banner-bg-tab.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .banner {
+    background-image:
+    linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7) ), 
+        url(../images/banner-bg-tab-2x.jpg);
+  }
+}
+
+    .banner-title{
+        font-size: 56px;
+        max-width: 494px;
+    }
+
+    .team > .container{
+        width: 557px;
+    }
+
+    .team-item{
+        width: calc((100% - 30px) / 2);
+    }
+
+    .customers > .container{
+        width: 552px;
+    }
+
+    .customers-item {
+        width: calc((100% - 60px) / 3);
+    }
+}

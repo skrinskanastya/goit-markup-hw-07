@@ -1,0 +1,63 @@
+@media screen and (min-width: 1200px) {
+    .container{
+        width: 1158px;
+    }
+    
+    .header-contacts-list{
+        display: flex;
+    }
+
+    .header-contacts-list a{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .banner{
+        padding-top: 188px;
+        padding-bottom: 188px;
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7) ), 
+        url(../images/office.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .banner {
+    background-image:
+    linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7) ), 
+        url(../images/banner-bg-desk-2x.jpg);
+  }
+}
+
+    .banner-title{
+        font-size: 56px;
+        max-width: 494px;
+    }
+
+    .team{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .team > .container{
+        width: 1158px;
+    }
+
+    .team-item{
+        width: calc((100% - 72px) / 4);
+    }
+
+    .customers{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .customers-item {
+        width: calc((100% - 150px) / 6);
+    }
+}

@@ -1,0 +1,9 @@
+@media screen and (min-width: 480px) {
+    .container{
+        width: 428px;
+    }
+
+    .banner{
+        padding: 112px 56px;
+    }
+}
