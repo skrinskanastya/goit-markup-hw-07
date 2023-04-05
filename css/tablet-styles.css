@@ -1,0 +1,194 @@
+/* --------------------------TABLET STYLES------------------------------ */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  /* -----------------------------HEADER---------------------------------- */
+
+  .menu-open {
+    display: none;
+  }
+
+  .header {
+    padding-bottom: 0;
+  }
+
+  .header-navigation {
+    display: flex;
+  }
+
+  .header-logo {
+    margin-right: 120px;
+  }
+
+  .header-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-link {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: var(--brand-color-navy-blue);
+    transition: color var(--tra);
+    position: relative;
+  }
+
+  .header-link.current::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--brand-color-ocean);
+    border-radius: 2px;
+    left: 0;
+    bottom: -27px;
+  }
+
+  .header-link:hover {
+    color: var(--brand-color-blue);
+  }
+
+  .header-link:active {
+    color: var(--brand-color-blue);
+  }
+
+  .header-contacts-list {
+    display: block;
+  }
+
+  .header-contacts-list a {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.02em;
+    color: var(--brand-color-grey);
+    text-decoration: none;
+  }
+
+  /* -----------------------------HEADER---------------------------------- */
+  /* -----------------------------BANNER---------------------------------- */
+  .banner {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/banner/banner-bg-tab.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .banner-title {
+    font-size: 56px;
+    max-width: 494px;
+    margin-bottom: 40px;
+  }
+
+  /* -----------------------------BANNER---------------------------------- */
+  /* ---------------------------ADVANTAGES-------------------------------- */
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+  .advantages-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .advantages-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+
+  .advantages-title {
+    text-align: left;
+  }
+  /* ---------------------------ADVANTAGES-------------------------------- */
+  /* ------------------------------TEAM----------------------------------- */
+
+  .team {
+    padding-bottom: 104px;
+  }
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+
+  .team-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+  /* ------------------------------TEAM----------------------------------- */
+  /* ----------------------------CUSTOMERS-------------------------------- */
+  .customers-list {
+    column-gap: 24px;
+    justify-content: center;
+  }
+  .customers-item {
+    width: calc((100% - 48px) / 3);
+    max-width: 168px;
+  }
+  /* ----------------------------CUSTOMERS-------------------------------- */
+  /* -----------------------------FOOTER---------------------------------- */
+
+  .footer-container {
+    padding-left: 108px;
+    padding-right: 164px;
+  }
+
+  .footer-wrapper {
+    display: flex;
+  }
+
+  .footer-text-wrapper {
+    margin-right: 24px;
+  }
+
+  .footer-soc-title {
+    text-align: left;
+  }
+
+  .footer-form {
+    display: flex;
+  }
+
+  .footer-form-title {
+    text-align: left;
+  }
+
+  .footer-input {
+    max-width: 264px;
+    margin-bottom: 0;
+  }
+
+  .footer-form-button {
+    margin-left: 24px;
+  }
+
+  .buttons-list {
+    justify-content: center;
+  }
+
+  .portfolio-list {
+    column-gap: 24px;
+  }
+
+  .portfolio-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  /* -----------------------------FOOTER---------------------------------- */
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .banner {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/banner/banner-bg-tab-2x.jpg);
+  }
+}
+/* --------------------------TABLET STYLES------------------------------ */
