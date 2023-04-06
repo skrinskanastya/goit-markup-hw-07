@@ -61,7 +61,8 @@ body {
 }
 
 .container {
-  padding: 0 16px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -90,15 +91,21 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 408px;
-  height: 576px;
+  width: 392px;
+  /* height: 586px; */
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 24px;
+  padding-top: 72px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 24px;
 }
 .modal-close-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
   background-color: #e7e9fc;
@@ -108,8 +115,6 @@ body {
   justify-content: center;
   align-items: center;
   transition: background-color var(--tra), color var(--tra);
-  margin-left: auto;
-  margin-bottom: 24px;
 }
 
 .modal-close-button:hover,
@@ -134,6 +139,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--brand-color-navy-blue);
   margin-bottom: 16px;
+}
+.modal-field {
+  margin-bottom: 8px;
 }
 
 .modal-label-text {
@@ -198,7 +206,7 @@ body {
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   padding-left: 16px;
   padding-top: 8px;
   outline: none;
@@ -326,10 +334,14 @@ body {
 }
 .mobile-menu-container {
   position: relative;
+  height: 100%;
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 80px;
   padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .mobile-menu-close-btn {
   position: absolute;
@@ -340,9 +352,12 @@ body {
   width: 24px;
   height: 24px;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mobile-menu-list {
-  margin-bottom: 150px;
+  margin-bottom: 48px;
 }
 .mobile-menu-link {
   font-weight: 700;
@@ -355,8 +370,12 @@ body {
 .mobile-menu-link:active {
   color: var(--brand-color-ocean);
 }
+.mobile-menu-link.current {
+  color: var(--brand-color-ocean);
+}
 .mobile-menu-contacts-list {
   margin-bottom: 48px;
+  margin-top: auto;
 }
 .mobile-menu-item:not(:last-child) {
   margin-bottom: 40px;
@@ -406,7 +425,8 @@ body {
   background-position: center;
   background-size: cover;
   background-color: var(--brand-color-navy-blue);
-  padding: 112px 56px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   justify-content: center;
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -445,9 +465,7 @@ body {
   border-radius: 4px;
   border: none;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   padding: 16px 32px;
   transition: background-color var(--tra), box-shadow var(--tra);
 }
@@ -556,10 +574,10 @@ body {
 .team-soc-item {
   width: 40px;
   height: 40px;
-  padding-bottom: 32px;
 }
 .team-soc-link {
-  padding: 12px;
+  width: 100%;
+  height: 100%;
   background-color: var(--brand-color-blue);
   border-radius: 50%;
   display: flex;
@@ -592,7 +610,7 @@ body {
 
 .customers-item {
   height: 88px;
-  width: calc((100% - 30px) / 2);
+  width: calc((100% - 16px) / 2);
 }
 
 .customers-link {
@@ -641,6 +659,7 @@ body {
   color: #f4f4fd;
   text-decoration: none;
   margin-bottom: 16px;
+  display: block;
   text-align: center;
 }
 .footer-logo span {
@@ -653,6 +672,9 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  max-width: 268px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-soc-title {
@@ -681,12 +703,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff1a;
+  background-color: var(--brand-color-blue);
   border-radius: 50%;
   transition: background-color var(--tra);
 }
 
-.footer-soc-link:hover {
+.footer-soc-link:hover,
+.footer-soc-link:active {
   background-color: #31d0aa;
 }
 
@@ -702,6 +725,7 @@ body {
 
 .footer-input {
   background-color: transparent;
+  color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   height: 40px;

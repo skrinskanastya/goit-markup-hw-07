@@ -35,6 +35,9 @@
     transition: color var(--tra);
     position: relative;
   }
+  .header-link.current {
+    color: var(--brand-color-ocean);
+  }
 
   .header-link.current::after {
     content: "";
@@ -140,6 +143,9 @@
   .footer-wrapper {
     display: flex;
   }
+  .footer-logo {
+    text-align: left;
+  }
 
   .footer-text-wrapper {
     margin-right: 24px;
@@ -165,9 +171,15 @@
   .footer-form-button {
     margin-left: 24px;
   }
+  /* -----------------------------FOOTER---------------------------------- */
+  /* -------------------------------PORTFOLIO----------------------------- */
 
   .buttons-list {
     justify-content: center;
+    margin-bottom: 64px;
+  }
+  .buttons-btn {
+    padding: 12px 24px;
   }
 
   .portfolio-list {
@@ -177,8 +189,7 @@
   .portfolio-item {
     width: calc((100% - 24px) / 2);
   }
-
-  /* -----------------------------FOOTER---------------------------------- */
+  /* -------------------------------PORTFOLIO----------------------------- */
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
