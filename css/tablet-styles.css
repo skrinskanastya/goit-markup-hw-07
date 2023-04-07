@@ -3,6 +3,11 @@
   .container {
     max-width: 768px;
   }
+  .modal-window {
+    width: 408px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 
   /* -----------------------------HEADER---------------------------------- */
 
@@ -11,11 +16,13 @@
   }
 
   .header {
+    padding-top: 0;
     padding-bottom: 0;
   }
 
   .header-navigation {
     display: flex;
+    align-items: center;
   }
 
   .header-logo {
@@ -34,6 +41,9 @@
     color: var(--brand-color-navy-blue);
     transition: color var(--tra);
     position: relative;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
   }
   .header-link.current {
     color: var(--brand-color-ocean);
@@ -47,7 +57,7 @@
     background-color: var(--brand-color-ocean);
     border-radius: 2px;
     left: 0;
-    bottom: -27px;
+    bottom: 0;
   }
 
   .header-link:hover {
@@ -164,7 +174,7 @@
   }
 
   .footer-input {
-    max-width: 264px;
+    width: 264px;
     margin-bottom: 0;
   }
 
@@ -173,7 +183,10 @@
   }
   /* -----------------------------FOOTER---------------------------------- */
   /* -------------------------------PORTFOLIO----------------------------- */
-
+  .portfolio {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
   .buttons-list {
     justify-content: center;
     margin-bottom: 64px;

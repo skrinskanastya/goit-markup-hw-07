@@ -9,7 +9,7 @@
   /* -----------------------------HEADER---------------------------------- */
 
   .header {
-    padding-bottom: 24px;
+    /* padding-bottom: 24px; */
     padding-left: 156px;
     padding-right: 156px;
   }
@@ -57,12 +57,18 @@
   .advantages-item:nth-last-child(-n + 4) {
     margin-bottom: 0;
   }
-  .advantages-icon {
-    display: block;
-    box-sizing: content-box;
+  .advantages-icon-wrapper {
+    width: 264px;
+    height: 112px;
     background-color: #f4f4fd;
     border-radius: 4px;
-    padding: 24px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .advantages-icon {
+    display: flex;
   }
   .advantages-title {
     font-weight: 500;
@@ -133,6 +139,13 @@
   .portfolio-item {
     width: calc((100% - 48px) / 3);
   }
+  /* -------------------------------PORTFOLIO----------------------------- */
+
+  .portfolio {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+  /* -------------------------------PORTFOLIO----------------------------- */
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
